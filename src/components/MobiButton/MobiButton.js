@@ -2,10 +2,10 @@ import React from 'react'
 import { TouchableOpacity, Text, StyleSheet } from 'react-native'
 
 // Arrow Function
-const MobiButton = ({ title, cor, children }) => {
+const MobiButton = ({ title, cor, funcaoOnPress, children }) => {
   return (
 
-    <TouchableOpacity style={styles.button}>
+    <TouchableOpacity style={styles.button} onPress={funcaoOnPress}>
 
       <Text style={styles.text}>{children}</Text>
       {/* <Text style={styles.text}>{title}</Text> */}

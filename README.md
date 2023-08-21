@@ -1,3 +1,6 @@
+### NA Tutorial
+https://docs.expo.dev/tutorial/create-your-first-app/
+
 npx create-expo-app Awesome Project
 `npx-create-expo-app --template`
 

@@ -1,6 +1,7 @@
 import React from 'react'
 import { TouchableOpacity, Text, StyleSheet } from 'react-native'
 
+// onPressIn (vem antes do onPress, quando começa pressionar)vs onPress
 
 // Arrow Function
 const MobiButton = ({ title, corBotao, corTexto, funcaoOnPress, children }) => {

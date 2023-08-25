@@ -16,7 +16,7 @@ export default function App() {
     <View style={styles.container}>
       <Text style={styles.texto}>Meu Primeiro App! OLA</Text>
 
-      <MobiButton title="Olá, botão!" funcaoOnPress={mostrarTexto}>
+      <MobiButton title="Olá, botão!" funcaoOnPress={mostrarTexto} corBotao='blue' corTexto='white'>
         Primeiro Botão
       </MobiButton>
       <StatusBar style="auto" />
@@ -34,7 +34,7 @@ const styles = StyleSheet.create({
 
   },
   texto: {
-    color: "red",
+    color: "white",
     fontWeight: 'bold',
     fontSize: 32,
   }

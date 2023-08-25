@@ -1,8 +1,10 @@
 import React from 'react'
 import { TouchableOpacity, Text, StyleSheet } from 'react-native'
 
+
 // Arrow Function
-const MobiButton = ({ title, cor, funcaoOnPress, children }) => {
+const MobiButton = ({ title, corBotao, corTexto, funcaoOnPress, children }) => {
+  const styles = getStyles()
   return (
 
     <TouchableOpacity style={styles.button} onPress={funcaoOnPress}>
@@ -12,18 +14,21 @@ const MobiButton = ({ title, cor, funcaoOnPress, children }) => {
 
     </TouchableOpacity>
   )
+
+  // Style
+  function getStyles() {
+    return StyleSheet.create({
+      button: {
+        backgroundColor: corBotao,
+        padding: 20,
+        borderRadius: 30,
+        margin: 30,
+      },
+      text: {
+        color: corTexto,
+      }
+    })
+  }
 }
 
-// Style
-const styles = StyleSheet.create({
-  button: {
-    backgroundColor: "green",
-    padding: 20,
-    borderRadius: 30,
-    margin: 30,
-  },
-  text: {
-    color: "white",
-  }
-})
 export default MobiButton

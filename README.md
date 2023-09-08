@@ -2,7 +2,7 @@
 https://docs.expo.dev/tutorial/create-your-first-app/
 
 npx create-expo-app Awesome Project
-`npx-create-expo-app --template`
+`npx create-expo-app --template`
 
 `npm install -g expo-cli`
 `npm i` = `npm install`
